@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import john from "../assets/john.jpg";
 import kwame from "../assets/Kwame.jpg";
 import nelson from "../assets/mandela.avif";
 
 const Testimony = () => {
-
   const testimonials = [
     {
       avatar: nelson,
@@ -28,13 +27,25 @@ const Testimony = () => {
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
+  // Automatically change testimonial every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prevTestimonial) => 
+        (prevTestimonial + 1) % testimonials.length
+      );
+    }, 2000); // 2000ms = 2 seconds
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   return (
     <section className="px-4 sm:px-8 lg:px-16 py-10">
       <div className="max-w-screen-xl mx-auto">
         <div className="max-w-3xl mx-auto">
           <ul>
             {testimonials.map((item, idx) => (
-              currentTestimonial == idx ? (
+              currentTestimonial === idx ? (
                 <li key={idx}>
                   <figure>
                     <blockquote>
@@ -59,7 +70,7 @@ const Testimony = () => {
                     </div>
                   </figure>
                 </li>
-              ) : ""
+              ) : null
             ))}
           </ul>
         </div>
@@ -68,7 +79,7 @@ const Testimony = () => {
             {testimonials.map((item, idx) => (
               <li key={idx}>
                 <button
-                  className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full duration-150 ring-offset-2 ring-redish-500 ${currentTestimonial == idx ? "bg-redish-500 ring" : "bg-white ring"
+                  className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full duration-150 ring-offset-2 ring-redish-500 ${currentTestimonial === idx ? "bg-redish-500 ring" : "bg-white ring"
                     }`}
                   onClick={() => setCurrentTestimonial(idx)}
                 ></button>

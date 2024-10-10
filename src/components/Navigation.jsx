@@ -14,8 +14,8 @@ const Nav = () => {
                         <img src={logo} alt="Abbysinia Logo" height={125} width={125} />
                     </a>
                     <div className="hidden md:flex space-x-8 ml-10">
-                        <a href="#" className="text-gray-700 hover:text-gray-900 font-medium font-crafty text-16px">Home</a>
-                        <a href="#" className="text-gray-700 hover:text-gray-900 font-medium font-crafty text-16px">About</a>
+                        <a href="/" className="text-gray-700 hover:text-gray-900 font-medium font-crafty text-16px">Home</a>
+                        <a href="/about" className="text-gray-700 hover:text-gray-900 font-medium font-crafty text-16px">About</a>
                         <a href="#" className="text-gray-700 hover:text-gray-900 font-medium font-crafty text-16px">Contact Us</a>
                         <a href="#" className="text-gray-700 hover:text-gray-900 font-medium font-crafty text-16px">Log In</a>
                     </div>
@@ -39,8 +39,8 @@ const Nav = () => {
             {isOpen && (
                 <div className="md:hidden">
                     <div className="px-4 pt-4 pb-3 space-y-3 sm:px-6">
-                        <a href="#" className="block px-4 py-2 rounded-md text-base font-crafty font-medium text-gray-700 hover:text-gray-900">Home</a>
-                        <a href="#" className="block px-4 py-2 rounded-md text-base font-crafty font-medium text-gray-700 hover:text-gray-900">About</a>
+                        <a href="/" className="block px-4 py-2 rounded-md text-base font-crafty font-medium text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="/about" className="block px-4 py-2 rounded-md text-base font-crafty font-medium text-gray-700 hover:text-gray-900">About</a>
                         <a href="#" className="block px-4 py-2 rounded-md text-base font-crafty font-medium text-gray-700 hover:text-gray-900">Contact Us</a>
                         <a href="#" className="block px-4 py-2 rounded-md text-base font-crafty font-medium text-gray-700 hover:text-gray-900">Log In</a>
                     </div>

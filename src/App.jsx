@@ -1,9 +1,22 @@
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import About from "./pages/About"
 import HeroSection from "./pages/Home"
+
+const router= createBrowserRouter([
+  {
+    path: '/',
+    element: <HeroSection />,
+  },
+  {
+    path: '/about',
+    element: <About />,
+  }
+])
 
 function App() {
   return (
     <>
-      <HeroSection/>      
+      <RouterProvider router={router}/>     
     </>
   )
 }

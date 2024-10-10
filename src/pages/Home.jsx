@@ -15,15 +15,17 @@ const HeroSection = () => {
             {/* Left Section */}
             <div className="md:w-3/5 w-full flex flex-col justify-start md:justify-center md:pt-0 pt-4">
                 <Nav />
-                <div className="flex-grow flex flex-col justify-center mt-4 md:mt-0">
-                    <h1 className="text-3xl md:text-5xl font-extrabold text-redish-500 font-crimson mb-4 md:mb-6">
-                        EXPLORE ETHIOPIA
-                    </h1>
-                    <p className="text-base md:text-lg text-pencil-500 font-railway mb-8 md:mb-12">
-                        Step into Ethiopia, a country where every corner tells a story, from ancient empires to modern-day marvels.
-                        A land of rich history, diverse wildlife, and awe-inspiring natural wonders waiting to be explored.
-                        A journey through time, from the birthplace of humanity to the vibrant traditions that thrive today.
-                    </p>
+                <div className="flex-grow flex flex-col justify-between mt-4 md:mt-0" style={{ minHeight: '400px' }}>
+                    <div>
+                        <h1 className="text-3xl md:text-5xl font-extrabold text-redish-500 font-crimson mb-4 md:mb-6">
+                            EXPLORE ETHIOPIA
+                        </h1>
+                        <p className="text-base md:text-lg text-pencil-500 font-railway mb-8 md:mb-12">
+                            Step into Ethiopia, a country where every corner tells a story, from ancient empires to modern-day marvels.
+                            A land of rich history, diverse wildlife, and awe-inspiring natural wonders waiting to be explored.
+                            A journey through time, from the birthplace of humanity to the vibrant traditions that thrive today.
+                        </p>
+                    </div>
                     <Testimony />
                 </div>
             </div>
