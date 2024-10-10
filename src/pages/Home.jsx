@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import ethiopiaImage2 from "../assets/Biherawi.jpg";
 import ethiopiaImage5 from "../assets/blue-nile.jpg";
 import ethiopiaImage4 from "../assets/dalol.jpg";
@@ -63,9 +64,11 @@ const HeroSection = () => {
                                 </div>
                                 {/* Learn More Button */}
                                 <div className="mt-8 sm:mt-16 flex justify-center">
-                                    <button className="bg-redish-500 text-white text-lg font-lora font-bold py-2 px-4 rounded-lg hover:bg-redish-700 transition duration-300">
-                                        Learn More
-                                    </button>
+                                    <Link to="/about"> {/* Use Link to navigate to the about page */}
+                                        <button className="bg-redish-500 text-white text-lg font-lora font-bold py-2 px-4 rounded-lg hover:bg-redish-700 transition duration-300">
+                                            Learn More
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

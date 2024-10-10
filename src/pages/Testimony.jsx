@@ -9,7 +9,7 @@ const Testimony = () => {
       avatar: nelson,
       name: "Nelson Mandela",
       title: "Former South Africa President",
-      quote: "Ethiopia has always held a special place in my own imagination and the prospect of visiting Ethiopia attracted me more strongly than a trip to France, England, and America combined. I felt I would be visiting my own genesis, unearthing the roots of what made me an African."
+      quote: "Ethiopia has always held a special place in my own imagination and the prospect of visiting Ethiopia attracted me more strongly than a trip to France, England, and America combined."
     },
     {
       avatar: john,
