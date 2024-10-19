@@ -6,7 +6,7 @@ import ethiopiaImage4 from "../assets/dalol.jpg";
 import ethiopiaImage1 from "../assets/Danakil.jpg";
 import ethiopiaImage3 from "../assets/Gondar.jpg";
 import ethiopiaImage6 from "../assets/Lalibela.jpg";
-import ethiopiaImage7 from "../assets/Wenchi.jpg";
+import ethiopiaImage7 from "../assets/wenchi.jpg";
 import Nav from '../components/Navigation';
 import Testimony from './Testimony';
 
