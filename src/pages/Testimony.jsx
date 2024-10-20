@@ -49,7 +49,7 @@ const Testimony = () => {
                 <li key={idx}>
                   <figure>
                     <blockquote>
-                      <p className="text-black-500 text-quote font-lora font-bold text-lg sm:text-xl lg:text-2xl">
+                      <p className="text-black-500 dark:text-gray-300 text-quote font-lora font-bold text-lg sm:text-xl lg:text-2xl">
                         “{item.quote}”
                       </p>
                     </blockquote>
@@ -60,7 +60,7 @@ const Testimony = () => {
                         alt={item.name}
                       />
                       <div className="mt-3">
-                        <span className="block font-raleway text-base sm:text-lg lg:text-xl text-redish-500 font-bold">
+                        <span className="block font-raleway text-base sm:text-lg lg:text-xl text-redish-500 dark:text-yellow-500 font-bold">
                           {item.name}
                         </span>
                         <span className="block font-lora text-gray-600 text-sm sm:text-base mt-0.5">
@@ -79,7 +79,7 @@ const Testimony = () => {
             {testimonials.map((item, idx) => (
               <li key={idx}>
                 <button
-                  className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full duration-150 ring-offset-2 ring-redish-500 ${currentTestimonial === idx ? "bg-redish-500 ring" : "bg-white ring"
+                  className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full duration-150 ring-offset-2 ring-redish-500 dark:ring-yellow-500 ${currentTestimonial === idx ? "bg-redish-500 dark:bg-yellow-500 ring" : " dark:bg-gray-900 ring"
                     }`}
                   onClick={() => setCurrentTestimonial(idx)}
                 ></button>
